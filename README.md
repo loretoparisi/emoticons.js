@@ -3,7 +3,7 @@ Emoticon text codes to emoticons 🎱 ❤️ 🚀
 
 ## Install from npm
 ```sh
-npm install textemoticon.js
+npm install textemoticons.js
 ```
 
 ## Get Emoji from Text Emoticon
