@@ -6,23 +6,23 @@ Emoticon text codes to emoticons 🎱 ❤️ 🚀
 npm install textemoticons.js
 ```
 
-## Get Emoji from Text Emoticon
+## Get Emoji from Emoticon Text Code
 ```javascript
 const EmoticonsJS = require('textemoticons.js');
 var emoji = EmoticonsJS.emoji[ "8ball" ]
 🎱
 ```
 
-## Search Emoji from Text Emoticon
+## Top Nearest emoji from Text
 ```javascript
 const EmoticonsJS = require('textemoticons.js');
-EmoticonsJS.match("cat", 10).then(emoji => console.log(emoji) )
+EmoticonsJS.nearest("button", 10).then(emoji => console.log(emoji) )
 [ '⏹', '⏸', '🔘', '⏺', '🔲', '⏭', '🚅', '🔳', '⏯', '⏮' ]
 ```
 
-## Top nearest neighbor emoji from Text Emoticon
+## Search Emoji from Text
 ```javascript
 const EmoticonsJS = require('textemoticons.js');
-EmoticonsJS.match("cat", 10).then(emoji => console.log("cat", emoji) )
+EmoticonsJS.match("cat", 10).then(emoji => console.log(emoji) )
 [ '🤠', '😰', '🎃', '😺', '😸', '😹', '😻', '😼', '😽', '🙀' ]
 ```
