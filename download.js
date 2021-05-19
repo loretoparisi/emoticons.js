@@ -8,12 +8,14 @@
 
 const EmoticonsJS = require('./lib/index');
 
-EmoticonsJS.download({ version: '12.0' }).
+const version = '13.1';
+EmoticonsJS.download({ version: version}).
     then(emoji => {
         console.log(JSON.stringify( emoji[0], null, 2) )
         console.log(JSON.stringify( emoji, null, 2) );
         console.log(JSON.stringify( emoji[emoji.length-1], null, 2) )
-        require('fs').writeFileSync('./unicode-emoji-12.0.json', JSON.stringify( emoji, null, 2));
+        require('fs').writeFileSync(`./dist/unicode-emoji-${version}.json`, JSON.stringify( emoji, null, 2));
+        require('fs').writeFileSync('./dist/latest.json', JSON.stringify( emoji, null, 2));
     })
     .catch(error => {
         console.error(error);
