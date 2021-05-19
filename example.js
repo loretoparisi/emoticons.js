@@ -24,4 +24,4 @@ EmoticonsJS.match("point", 10).then(emoji => console.log("point", emoji) )
 
 // Emoji length
 console.log(EmoticonsJS.emoji[ "pool_8_ball" ], " length:", EmoticonsJS.length(EmoticonsJS.emoji[ "pool_8_ball" ]) );
-console.log("Look at " + EmoticonsJS.emoji[ "point_down" ], " correct length:",  EmoticonsJS.length("Look at " + EmoticonsJS.emoji[ "point_down" ]), " wrong length:", ("Look at " + "👇").length );
+console.log("Look at " + EmoticonsJS.emoji[ "backhand_index_pointing_down" ], " correct length:",  EmoticonsJS.length("Look at " + EmoticonsJS.emoji[ "backhand_index_pointing_down" ]), " wrong length:", ("Look at " + "👇").length );
