@@ -20,11 +20,18 @@ EmoticonsJS.nearest("button", 10).then(emoji => console.log(emoji) )
 [ '⏹', '⏸', '🔘', '⏺', '🔲', '⏭', '🚅', '🔳', '⏯', '⏮' ]
 ```
 
-## Search Emoji from Text
+## Fuzzy search Emoji from Text
 ```javascript
 const EmoticonsJS = require('textemoticons.js');
 EmoticonsJS.match("cat", 10).then(emoji => console.log(emoji) )
 [ '🤠', '😰', '🎃', '😺', '😸', '😹', '😻', '😼', '😽', '🙀' ]
+```
+
+## Count length of text containing Emoji
+```javascript
+const EmoticonsJS = require('textemoticons.js');
+EmoticonsJS.length("Look at " + EmoticonsJS.emoji[ "point_down" ])
+9
 ```
 
 ## Download Emoji Test file from Unicode.org :new:
